@@ -1,3 +1,71 @@
+/* General Styling */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color for the body */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff; /* White background for the header */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 40px; /* Space between the intro text and the menu */
+}
+
+.intro h1 {
+    font-size: 36px; /* Size of the main title */
+    font-weight: bold; /* Make the text bold */
+    margin: 0;
+    color: #333; /* Dark color for better readability */
+}
+
+.intro p {
+    font-size: 18px; /* Size of the paragraph text */
+    margin: 10px 0 0; /* Margin for spacing */
+    color: #666; /* Slightly lighter color for the paragraph text */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+/* Menu Styling */
+nav .menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Dark color for the menu text */
+    text-align: center;
+}
+
+.menu-item i.material-icons {
+    font-size: 36px;
+    margin-right: 8px;
+}
+
+.menu-item span {
+    font-size: 18px;
+}
+
+.menu-item:hover {
+    color: #ff5722; /* Color change on hover */
+}
+
+/* About Me Section */
 .about-me {
     padding: 40px 20px; 
     background-color: #f9f9f9; /* Light background */
@@ -35,4 +103,12 @@
     font-size: 16px;
     color: #555;
     line-height: 1.6;
+}
+
+/* Footer, Miscellaneous Styling (if needed) */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
 }
