@@ -1,48 +1,44 @@
-
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 header {
     background-color: #333;
     padding: 10px;
+    width: 100%;
 }
 
-nav ul.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+nav .menu {
     display: flex;
     justify-content: center;
+    gap: 20px; /* Space between menu items */
 }
 
-nav ul.menu li {
-    margin: 0 15px;
-    display: flex;
-    align-items: center;
-}
-
-nav ul.menu li a {
+.menu-item {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #fff;
+    text-align: center;
 }
 
-nav ul.menu li i.material-icons {
-    font-size: 24px; /* Adjust size as needed */
+.menu-item i.material-icons {
+    font-size: 36px; /* Adjust size as needed */
     margin-right: 8px; /* Space between icon and text */
 }
 
-nav ul.menu li span {
-    font-size: 16px; /* Adjust text size as needed */
+.menu-item span {
+    font-size: 18px; /* Adjust text size as needed */
 }
 
 /* Optional: Add hover effect */
-nav ul.menu li a:hover {
+.menu-item:hover {
     color: #ff5722; /* Change color on hover */
 }
