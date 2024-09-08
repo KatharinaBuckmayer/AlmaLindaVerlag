@@ -1,29 +1,27 @@
 .about-me {
-    padding: 40px 20px; /* Add padding around the section */
-    background-color: #f9f9f9; /* Light background color */
-    width: 100%;
+    padding: 40px 20px; 
+    background-color: #f9f9f9; /* Light background */
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    width: 100%;
 }
 
 .about-container {
-    display: flex; /* Flexbox for side-by-side layout */
-    align-items: flex-start; /* Align image and text to the top */
-    max-width: 1000px;
-    flex-wrap: wrap; /* Ensure flexibility for smaller screens */
+    display: flex; /* Use flexbox for layout */
+    max-width: 900px; /* Limit the width */
+    align-items: flex-start; /* Align items at the top */
 }
 
 .about-image {
-    max-width: 300px; /* Set a maximum width for the image */
-    width: 100%; /* Ensure it scales with the container */
-    margin-right: 20px; /* Space between the image and the text */
-    border-radius: 8px; /* Optional: Rounded corners */
-    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 250px; /* Set the width for the image */
+    height: auto; /* Keep the aspect ratio */
+    margin-right: 20px; /* Add space between the image and text */
+    border-radius: 8px; /* Rounded corners */
 }
 
 .about-text {
     font-family: Helvetica, Arial, sans-serif;
-    flex-grow: 1; /* Allow the text to take up remaining space */
+    max-width: 600px; /* Limit the width of the text */
 }
 
 .about-text h2 {
