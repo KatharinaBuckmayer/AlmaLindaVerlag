@@ -61,3 +61,43 @@ nav .menu {
 .menu-item:hover {
     color: #ff5722; /* Color change on hover */
 }
+
+
+
+.about-me {
+    padding: 40px 20px; /* Add padding around the section */
+    background-color: #f9f9f9; /* Light background color */
+    width: 100%; /* Full width section */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.about-container {
+    display: flex; /* Flexbox for the container */
+    align-items: center; /* Align items vertically */
+    max-width: 1000px; /* Limit width */
+}
+
+.about-image {
+    max-width: 300px; /* Adjust image size */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.about-text {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
