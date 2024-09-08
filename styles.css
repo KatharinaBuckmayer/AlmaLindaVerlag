@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -11,14 +12,31 @@ body {
 
 header {
     background-color: #333;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
+    text-align: center; /* Center-align text */
 }
 
+.intro h1 {
+    font-size: 36px; /* Adjust size as needed */
+    font-weight: bold; /* Make text bold */
+    margin: 0;
+    color: #fff;
+}
+
+.intro p {
+    font-size: 18px; /* Adjust size as needed */
+    margin: 10px 0 0;
+    color: #fff;
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+/* Existing styles for menu */
 nav .menu {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between menu items */
+    gap: 20px;
+    margin-top: 20px; /* Space between intro and menu */
 }
 
 .menu-item {
@@ -30,15 +48,14 @@ nav .menu {
 }
 
 .menu-item i.material-icons {
-    font-size: 36px; /* Adjust size as needed */
-    margin-right: 8px; /* Space between icon and text */
+    font-size: 36px;
+    margin-right: 8px;
 }
 
 .menu-item span {
-    font-size: 18px; /* Adjust text size as needed */
+    font-size: 18px;
 }
 
-/* Optional: Add hover effect */
 .menu-item:hover {
-    color: #ff5722; /* Change color on hover */
+    color: #ff5722;
 }
