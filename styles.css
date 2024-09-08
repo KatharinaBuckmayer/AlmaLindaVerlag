@@ -1,7 +1,48 @@
+
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+header {
+    background-color: #333;
+    padding: 10px;
+}
 
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.menu li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul.menu li i.material-icons {
+    font-size: 24px; /* Adjust size as needed */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+nav ul.menu li span {
+    font-size: 16px; /* Adjust text size as needed */
+}
+
+/* Optional: Add hover effect */
+nav ul.menu li a:hover {
+    color: #ff5722; /* Change color on hover */
+}
