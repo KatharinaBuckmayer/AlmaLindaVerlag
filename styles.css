@@ -1,15 +1,3 @@
-/* body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Light background color for the body */
-   /*  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
 /* General Styling */
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -17,29 +5,38 @@ body {
     padding: 0;
     background-color: #fff; /* Set the full page background to white */
     color: #000; /* Black typeface */
+    height: 100vh; /* Ensure the body takes up full screen height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
-
 
 /* Header Styling */
 header {
-    background-color: #fff; /* Set the background to fully white */
-    padding: 60px 0; /* Add padding at the top and bottom */
-    width: 100%;
     text-align: center;
+    width: 100%;
+    padding: 0; /* Remove any extra padding */
 }
 
+/* Title Styling */
 .intro h1 {
-    font-size: 48px; /* Make the title larger */
-    font-weight: bold; /* Bold title */
+    font-size: 80px; /* Make the title very large */
+    font-weight: bold;
     margin: 0;
-    color: #000; /* Black color for the title */
+    color: #000;
+    line-height: 1.2;
 }
 
+/* Paragraph under the title */
 .intro p {
-    font-size: 20px; /* Slightly larger paragraph text */
-    margin: 10px 0 20px; /* Add space below the paragraph */
-    color: #000; /* Black color for the description */
-    line-height: 1.6;
+    font-size: 24px; /* Make the description text bigger */
+    margin: 10px 0 0;
+    color: #000;
+    line-height: 1.5;
+}
+
+.intro p br {
+    line-height: 2; /* Adds a bit of extra space between lines */
 }
 
 
