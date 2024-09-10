@@ -26,7 +26,7 @@ a:hover {
 header {
     text-align: center;
     width: 100%;
-    margin-bottom: 50px; /* Space between header and next section */
+    padding-bottom: 50px; /* Space below the header image */
 }
 
 /* Header Image Styling */
@@ -36,12 +36,13 @@ header {
     object-fit: cover; /* Crop image if needed */
     max-height: 300px; /* Adjust to fit better on the website */
     display: block; /* Remove any bottom space */
+    margin-bottom: 50px; /* Space between image and title */
 }
 
 /* Title Styling */
 .intro {
-    padding: 40px 20px; /* Increased padding around title */
-    margin-top: -20px; /* Adjusts the distance from the header image */
+    padding: 20px; /* Padding around title */
+    margin: 0; /* Ensure no extra margin */
 }
 
 .intro h1 {
@@ -53,7 +54,7 @@ header {
 
 .intro p {
     font-size: 24px; /* Bigger description text */
-    margin: 10px 0 40px;
+    margin: 10px 0;
     color: #000;
     line-height: 1.5;
 }
