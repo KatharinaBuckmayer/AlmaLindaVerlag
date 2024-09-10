@@ -43,6 +43,7 @@ header {
 .intro {
     padding: 20px; /* Padding around title */
     margin: 0; /* Ensure no extra margin */
+    text-align: center; /* Center the title */
 }
 
 .intro h1 {
@@ -50,12 +51,12 @@ header {
     font-weight: bold;
     margin: 0;
     color: #000;
-    padding-top: 40px; /* Additional space above the title */
+    padding-top: 60px; /* Increase space above the title */
 }
 
 .intro p {
     font-size: 24px; /* Bigger description text */
-    margin: 10px 0 120px; /* Added bottom margin for space */
+    margin: 20px 0 80px; /* Added bottom margin for space */
     color: #000;
     line-height: 1.5;
 }
@@ -65,7 +66,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 30px; /* Space between the icons */
-    margin-bottom: 50px; /* Space under the menu */
+    margin-bottom: 80px; /* Increase space under the menu */
 }
 
 .menu-item {
