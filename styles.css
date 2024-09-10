@@ -112,14 +112,9 @@ header {
     margin-bottom: 80px; /* Space under the menu */
 }
 
-.menu-item {
-    display: flex;
-    align-items: center;
-    font-size: 24px; /* Text size for menu items */
-    color: #000; /* Ensure the text is black */
-}
-
-.menu-item i {
-    font-size: 36px; /* Size of the icon */
-    margin-right: 10px; /* Space between the icon and text */
+/* Adding large white space after the menu */
+.white-space {
+    width: 100%;
+    height: 300px; /* Adjust this height to create the desired amount of white space */
+    background-color: #fff; /* Ensure it is white */
 }
