@@ -36,7 +36,7 @@ header {
     object-fit: cover; /* Crop image if needed */
     max-height: 300px; /* Adjust to fit better on the website */
     display: block; /* Remove any bottom space */
-    margin-bottom: 80px; /* Increase space between image and title */
+    margin-bottom: 120px; /* Increase space between image and title */
 }
 
 /* Title Styling */
@@ -55,7 +55,7 @@ header {
 
 .intro p {
     font-size: 24px; /* Bigger description text */
-    margin: 10px 0;
+    margin: 10px 0 120px; /* Added bottom margin for space */
     color: #000;
     line-height: 1.5;
 }
