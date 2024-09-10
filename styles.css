@@ -26,7 +26,6 @@ a:hover {
 header {
     text-align: center;
     width: 100%;
-    padding: 0; /* Reset padding for header */
     margin-bottom: 50px; /* Space between header and next section */
 }
 
@@ -41,7 +40,8 @@ header {
 
 /* Title Styling */
 .intro {
-    padding: 20px; /* Padding around title */
+    padding: 40px 20px; /* Increased padding around title */
+    margin-top: -20px; /* Adjusts the distance from the header image */
 }
 
 .intro h1 {
