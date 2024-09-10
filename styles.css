@@ -5,94 +5,65 @@ body {
     padding: 0;
     background-color: #fff; /* Set the full page background to white */
     color: #000; /* Black typeface */
-    height: 100vh; /* Ensure the body takes up full screen height */
+    height: 100vh;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content from the top */
+    align-items: center; /* Center content horizontally */
 }
 
 /* Header Styling */
 header {
     text-align: center;
     width: 100%;
-    padding: 0; /* Remove any extra padding */
+    padding: 100px 0; /* Add space at the top and bottom */
 }
 
 /* Title Styling */
 .intro h1 {
-    font-size: 80px; /* Make the title very large */
+    font-size: 80px; /* Very large title */
     font-weight: bold;
     margin: 0;
     color: #000;
     line-height: 1.2;
 }
 
-/* Paragraph under the title */
 .intro p {
-    font-size: 24px; /* Make the description text bigger */
-    margin: 10px 0 0;
+    font-size: 24px; /* Bigger description text */
+    margin: 10px 0 40px; /* Space between description and the next section */
     color: #000;
     line-height: 1.5;
 }
 
 .intro p br {
-    line-height: 2; /* Adds a bit of extra space between lines */
-}
-
-
-/* Menu Styling */
-nav .menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.menu-item {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333; /* Dark color for the menu text */
-    text-align: center;
-}
-
-.menu-item i.material-icons {
-    font-size: 36px;
-    margin-right: 8px;
-}
-
-.menu-item span {
-    font-size: 18px;
-}
-
-.menu-item:hover {
-    color: #ff5722; /* Color change on hover */
+    line-height: 2;
 }
 
 /* About Me Section */
 .about-me {
-    padding: 40px 20px; 
-    background-color: #f9f9f9; /* Light background */
-    display: flex;
-    justify-content: center; 
+    margin-top: 40px; /* Add some space between title/intro and the About Me section */
+    text-align: center; /* Center align the whole section */
+    padding: 0 20px; /* Add some padding on the sides for responsiveness */
     width: 100%;
 }
 
 .about-container {
-    display: flex; /* Use flexbox for layout */
-    max-width: 900px; /* Limit the width */
-    align-items: flex-start; /* Align items at the top */
+    display: block; /* Stack image and text */
+    max-width: 900px;
+    margin: 0 auto; /* Center the container */
 }
 
 .about-image {
-    width: 250px; /* Set the width for the image */
-    height: auto; /* Keep the aspect ratio */
-    margin-right: 20px; /* Add space between the image and text */
-    border-radius: 8px; /* Rounded corners */
+    max-width: 300px; /* Set a smaller max width */
+    height: auto;
+    margin-bottom: 20px; /* Add space below the image */
+    border-radius: 8px;
 }
 
 .about-text {
-    font-family: Helvetica, Arial, sans-serif;
-    max-width: 600px; /* Limit the width of the text */
+    text-align: center; /* Center align the text */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .about-text h2 {
@@ -107,26 +78,3 @@ nav .menu {
     color: #555;
     line-height: 1.6;
 }
-
-/* Footer, Miscellaneous Styling (if needed) */
-footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    color: #333;
-}
-
-/* Styling for the spacer image */
-.spacer-image {
-    text-align: center;
-    margin: 40px 0; /* Space above and below the image */
-}
-
-.spacer-image img {
-    max-width: 50%; /* Limit the image width to 50% of the page width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 300px; /* Set a stricter height limit */
-    object-fit: cover; /* Maintain image proportions */
-    border-radius: 10px; /* Optional rounded corners */
-}
-
