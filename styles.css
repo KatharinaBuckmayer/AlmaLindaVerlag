@@ -26,10 +26,24 @@ a:hover {
 header {
     text-align: center;
     width: 100%;
-    padding: 100px 0;
+    padding: 0; /* Reset padding for header */
+    margin-bottom: 50px; /* Space between header and next section */
+}
+
+/* Header Image Styling */
+.header-image {
+    width: 100%; /* Make image span full width */
+    height: auto;
+    object-fit: cover; /* Crop image if needed */
+    max-height: 300px; /* Adjust to fit better on the website */
+    display: block; /* Remove any bottom space */
 }
 
 /* Title Styling */
+.intro {
+    padding: 20px; /* Padding around title */
+}
+
 .intro h1 {
     font-size: 80px; /* Very large title */
     font-weight: bold;
@@ -49,7 +63,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 30px; /* Space between the icons */
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* Space under the menu */
 }
 
 .menu-item {
@@ -71,7 +85,7 @@ header {
 }
 
 .about-container {
-    display: flex;
+    display: flex; /* Ensure the image and text are side by side */
     flex-direction: row; /* Horizontal alignment */
     align-items: center;
     justify-content: center; /* Center the content */
