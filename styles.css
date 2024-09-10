@@ -1,22 +1,27 @@
 /* General Styling */
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif; /* Ensure everything uses Helvetica */
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Set the full page background to white */
-    color: #000; /* Black typeface */
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: flex-start; /* Align content from the top */
-    align-items: center; /* Center content horizontally */
+    background-color: #fff;
+    color: #000; /* Set all text to black */
+}
+
+/* Remove blue text on links */
+a {
+    color: #000; /* Black text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
 }
 
 /* Header Styling */
 header {
     text-align: center;
     width: 100%;
-    padding: 100px 0; /* Add space at the top and bottom */
+    padding: 100px 0;
 }
 
 /* Title Styling */
@@ -25,12 +30,11 @@ header {
     font-weight: bold;
     margin: 0;
     color: #000;
-    line-height: 1.2;
 }
 
 .intro p {
     font-size: 24px; /* Bigger description text */
-    margin: 10px 0 40px; /* Space between description and the next section */
+    margin: 10px 0 40px;
     color: #000;
     line-height: 1.5;
 }
@@ -39,31 +43,52 @@ header {
     line-height: 2;
 }
 
+/* Menu Styling */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the icons */
+    margin-bottom: 50px; /* Space under the menu */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Text size for menu items */
+    color: #000; /* Ensure the text is black */
+}
+
+.menu-item i {
+    font-size: 36px; /* Size of the icon */
+    margin-right: 10px; /* Space between the icon and text */
+}
+
 /* About Me Section */
 .about-me {
-    margin-top: 40px; /* Add some space between title/intro and the About Me section */
-    text-align: center; /* Center align the whole section */
-    padding: 0 20px; /* Add some padding on the sides for responsiveness */
-    width: 100%;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .about-container {
-    display: block; /* Stack image and text */
+    display: flex; /* Ensure the image and text are side by side */
+    flex-direction: row; /* Horizontal alignment */
+    align-items: center;
+    justify-content: center; /* Center the content */
     max-width: 900px;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .about-image {
-    max-width: 300px; /* Set a smaller max width */
+    max-width: 300px;
     height: auto;
-    margin-bottom: 20px; /* Add space below the image */
+    margin-right: 20px;
     border-radius: 8px;
 }
 
 .about-text {
-    text-align: center; /* Center align the text */
     max-width: 600px;
-    margin: 0 auto;
+    text-align: left;
 }
 
 .about-text h2 {
